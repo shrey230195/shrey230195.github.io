@@ -1,258 +1,4 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-csp="" ng-app="sachinStats"> <!--<![endif]-->
-
-	<head>
-
-		<base href="/">
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>Sachin stats</title>
-		<meta name="description" content="">
-
-		<!-- mobile meta -->
-		<meta name="HandheldFriendly" content="True">
-		<meta name="MobileOptimized" content="320">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-
-		<!--[if IE]>
-			<link rel="shortcut icon" href="favicon.ico">
-		<![endif]-->
-		<!-- or, set /favicon.ico for IE10 win -->
-		<meta name="msapplication-TileColor" content="#f01d4f">
-
-		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="styles/main.css">
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-		
-
-	</head>
-
-	<body class="main-wrapper">
-	
-		<!--[if lt IE 8]>
-		    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-		<![endif]-->
-
-		<!-- Navigation -->
-		<div style="width: 100%; height: 100%;" ng-controller="MainController" ui-view="main"></div>
-		
-	
-		</div>
-
-<!--<div class="container-fluid" ng-controller="MainController">
-	
-
-	
-		<!--<div class="sixteen wide column">
-			<h1>Sachin Tendulkar's Stats</h1>
-		</div>
-	  	<div class="sidebar" >
-	    	<div class="sidebar-heading" >
-	    		<h2 >Stats</h2>
-	    	</div>
-	    	<div class="statsBox" ng-class="{highlight:highlightBatting}" ng-click="goToBattingStats()"  >
-	    		
-	    			<img class="icon icons8-Cricket" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAACbklEQVRoge3au2tTURzA8Y8O4iT1Neiik4MIijr6wFfVImprLG1FcBcX/wdxFRxERAdnBUEdRAQfiCj4WITioILgC3y2WuujdTgJhpjk5t6be5OWfOE3hJv8fr8v5+Tk3HtCMmZiDR7iYzFuo5AwXy0KGMYEXuMcVja5hhk4iuOYrBInmlSnH7+q5P+Ds+hqUh1DOF2MakKT6EtZY7/qMuUxjGUp64C7OIUjdYrdTJG/IFqmFJ+wKUUt8AVPsRCfaxT6mjB3AT9r5KwVI1ibsB4YLSYaxMEaRd4nyLtPfJlSvMOSpEJ3/Bvu5Tjs/ylyNWbOvhQypbghLFix6S9L8gE7sB5X8E0Ywd05y5RiIIkQnCxLMoEL6MUWzG6RzKQwexLTX0wwJozKZayK8fneJstMClO/JRzA7wYaTBK5swfjCZuNijc5eiBbmXHxFqPUDMlumo2hOz+Vjkz7ygzKTua7jkxyBnRkGpbZlp9KNtuZjkwz2Ksj05HJnCxlRrEhP5Vsd825y2wW9lBZyPxAT34qgRdNaLxtZOBWgmYbkdmZp0Q5XXgQ0WCcGBEeg7WULtw3TWRKpJVqC5nFWFT2egGeiC8zJjxxbTmrhXOZSqnH4slsz6/l+vQITVVKzdeYVFvJwBn/mqsm9cgUktklnG+WN1kpNU84SK4mk+ttcxT19m4vsbTsvXNwr+z6CNbl12o03aL3bpUjNRfnhbPWjTn2GkmUzFscwyEpzznzIErmuib+VyBrou53LmFWy7qLSUemXenItCtb1V/Nrol3VN9yXplGMoTfk2kjQ9glPzOFvzPVWIHngsxFU3Rk4C8GyX+TMjuxEAAAAABJRU5ErkJggg==" width="38" height="38"/>
-	    		<h3 >
-	    			batting
-	    		</h3>
-	    	</div>
-	    	<div class="statsBox" ng-class="{highlight:highlightCenturies}" ng-click="goToCenturiesStats()" >
-	    		<i class="fa fa-area-chart" style="font-size:38px"></i>
-	    		<h3 >
-	    			Centuries
-	    		</h3>
-	    	</div>
-	    	
-	    	
-	    	<div class="statsBox" ng-class="{highlight:highlightRunsPerYear}" ng-click="goToRunsPerYearStats()" >
-	    		<i class="fa fa-bar-chart" style="font-size:38px"></i>
-	    		<h3 >
-	    			Runs/Year
-	    		</h3>
-	    	</div>
-	    	<div class="statsBox" ng-class="{highlight:highlightOpponent}" ng-click="goToOpponentStats()" >
-	    		<i class="fa fa-pie-chart" style="font-size:38px"></i>
-	    		<h3 >
-	    			Opponent
-	    		</h3>
-	    	</div>
-	  	</div>
-	  	<div class="result-wrapper" >
-	  		<div ui-view="home" ></div> 
-	  	</div>
-	  	<div class="source">
-		  	<a href="https://github.com/shrey230195/sachinStats" target="_blank">
-		  		<img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png">
-		  		<h3>code</h3>
-		  	</a>
-	  			
-	  	</div>
-	  	
-	  	
-	
-</div>-->
-
-
-	</body>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.0/angular-ui-router.min.js"></script>
-	
-	<script type="text/javascript">
-
-'use strict';
-angular
-.module('sachinStats', [
-  
-  'ui.router',
-  
-  ])
-.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
- console.log('woking');
- $stateProvider
-  .state('home', {
-    url: '',
-    controller: 'MainController',
-    views: {
-      'main': {
-        templateUrl: "main_nav.html"
-      }
-    }
-    
-    
-  })
-  .state('home.sachin', {
-    url: '',
-    controller: 'MainController',
-    views: {
-      'home': {
-        templateUrl: "sachin.html"
-      }
-    }
-  })
-  .state('home.batting', {
-    url: '',
-    controller: 'battingController',
-    views: {
-      'home': {
-        templateUrl: "batting.html"
-      }
-    }
-  })
-  .state('home.runsPerYear', {
-    url: '',
-    controller: 'runsPerController',
-    views: {
-      'home': {
-        templateUrl: "runs_per_year.html"
-      }
-    }
-  })
-  .state('home.centuries', {
-    url: '',
-    controller: 'centuriesController',
-    views: {
-      'home': {
-        templateUrl: "centuries.html"
-      }
-    }
-  })
-  .state('home.opponent', {
-    url: '',
-    controller: 'opponentController',
-    views: {
-      'home': {
-        templateUrl: "opponent.html"
-      }
-    }
-  })
-  .state('home.opponent.batting',{
-    url:'',
-    controller:'opponentController',
-    views:{
-      'opponentBowlBat':{
-        templateUrl:"opponent_runs.html"
-      }
-    }
-  })
-  .state('home.opponent.bowling',{
-    url:'',
-    controller:'opponentController',
-    views:{
-      'opponentBowlBat':{
-        templateUrl:"opponent_wickets.html"
-      }
-    }
-  }).state('home.centuries.half',{
-    url:'',
-    controller:'centuriesController',
-    views:{
-      'centuries':{
-        templateUrl:"half_centuries.html"
-      }
-    }
-  })
-  .state('home.centuries.full',{
-    url:'',
-    controller:'centuriesController',
-    views:{
-      'centuries':{
-        templateUrl:"full_centuries.html"
-      }
-    }
-  }).state('home.batting.first',{
-    url:'',
-    controller:'battingController',
-    views:{
-      'batting':{
-        templateUrl:"batting_first.html"
-      }
-    }
-  })
-  .state('home.batting.second',{
-    url:'',
-    controller:'battingController',
-    views:{
-      'batting':{
-        templateUrl:"batting_second.html"
-      }
-    }
-  });
-  
-
-  $urlRouterProvider.otherwise('home');
-}]);
-
-angular.module('sachinStats')
-
-.factory('dataFactory',["$log","$http", function($log, $http) {
-  
-
-  var dataFactory = {};
-
-  
-
-  dataFactory.getData = function() {
-
-      return $http({
-
-        method : 'GET',
-
-        url : 'data/sachin.csv'
-
-      });
-    };
-    
-
-    return dataFactory;
-  }]);
-
-
+console.log('fishhhh');
 angular.module('sachinStats')
         
         // Directive for generic chart, pass in chart options
@@ -425,15 +171,151 @@ angular.module('sachinStats')
 
 
 
+angular.module('sachinStats')
+
+.factory('dataFactory',["$log","$http", function($log, $http) {
+  
+
+  var dataFactory = {};
+
+  
+
+  dataFactory.getData = function() {
+
+      return $http({
+
+        method : 'GET',
+
+        url : 'data/sachin.csv'
+
+      });
+    },
+    
+
+    return dataFactory;
+  }]);
 
 
+  angular
+.module('sachinStats', [
+  
+  'ui.router',
+  
+  ])
+.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+  $stateProvider
+  .state('home', {
+    url: '/home',
+    templateUrl: 'views/main_nav.html',
+    controller: 'MainController'
+  })
+  .state('home.sachin', {
+    url: '/',
+    controller: 'ManageController',
+    views: {
+      'home': {
+        templateUrl: "views/sachin.html"
+      }
+    }
+  })
+  .state('home.batting', {
+    url: '/batting',
+    controller: 'battingController',
+    views: {
+      'home': {
+        templateUrl: "views/batting.html"
+      }
+    }
+  })
+  .state('home.runsPerYear', {
+    url: '/winLoss',
+    controller: 'runsPerController',
+    views: {
+      'home': {
+        templateUrl: "views/runs_per_year.html"
+      }
+    }
+  })
+  .state('home.centuries', {
+    url: '/centuries',
+    controller: 'centuriesController',
+    views: {
+      'home': {
+        templateUrl: "views/centuries.html"
+      }
+    }
+  })
+  .state('home.opponent', {
+    url: '/opponent',
+    controller: 'opponentController',
+    views: {
+      'home': {
+        templateUrl: "views/opponent.html"
+      }
+    }
+  })
+  .state('home.opponent.batting',{
+    url:'/batting',
+    controller:'opponentController',
+    views:{
+      'opponentBowlBat':{
+        templateUrl:"views/opponent_runs.html"
+      }
+    }
+  })
+  .state('home.opponent.bowling',{
+    url:'/bowling',
+    controller:'opponentController',
+    views:{
+      'opponentBowlBat':{
+        templateUrl:"views/opponent_wickets.html"
+      }
+    }
+  }).state('home.centuries.half',{
+    url:'/50',
+    controller:'centuriesController',
+    views:{
+      'centuries':{
+        templateUrl:"views/half_centuries.html"
+      }
+    }
+  })
+  .state('home.centuries.full',{
+    url:'/100',
+    controller:'centuriesController',
+    views:{
+      'centuries':{
+        templateUrl:"views/full_centuries.html"
+      }
+    }
+  }).state('home.batting.first',{
+    url:'/first_innings',
+    controller:'battingController',
+    views:{
+      'batting':{
+        templateUrl:"views/batting_first.html"
+      }
+    }
+  })
+  .state('home.batting.second',{
+    url:'/second_innings',
+    controller:'battingController',
+    views:{
+      'batting':{
+        templateUrl:"views/batting_second.html"
+      }
+    }
+  });
+  
+
+  $urlRouterProvider.otherwise('home');
+}]);
 
   angular.module('sachinStats')
 .controller('MainController', ['$scope', '$state', function ($scope, $state) {
   $scope.firstVisit = true;
-  console.log($scope.firstVisit);
   if($scope.firstVisit){
-    $state.go('home');
+    $state.go('home.sachin');
     $scope.firstVisit = false;
   }
   $scope.$on('$viewContentLoaded', function (){
@@ -450,7 +332,6 @@ angular.module('sachinStats')
     $scope.highlightRunsPerYear=false;
     $scope.highlightOpponent=false;
     $scope.highlightCenturies=false;
-    console.log($scope.firstVisit); 
   };
   $scope.goToRunsPerYearStats = function(){
     $state.go('home.runsPerYear');
@@ -459,7 +340,6 @@ angular.module('sachinStats')
     
     $scope.highlightOpponent=false;
     $scope.highlightCenturies=false;
-
     
   };
   $scope.goToOpponentStats = function(){
@@ -895,45 +775,3 @@ angular.module('sachinStats')
   
 }]);
 
-
-
-
-
-
-
-	</script>
-	<script type="text/javascript" src="js/templates.js"></script>
-	
-	<!-- Vendors -->
-	<script src="js/nonangularlibs.js"></script>
-
-	<!-- Non-angular libraries -->
-	<script src="js/libs.js"></script>
-
-	<!-- Angular external libraries for application -->
-	<script src="js/angularlibs.js"></script>
-
-	<!-- Angular components -->
-	<script src="js/appcomponents.js"></script>
-
-	<!-- Application sections -->
-	<script src="js/mainapp.js"></script>
-   
-
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-	<!-- templates from $templateCache -->
-	
-	
-	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-	<script>
-	    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-	    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-	    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-	    e.src='https://www.google-analytics.com/analytics.js';
-	    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-	    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-	</script>
-	
-</html>
