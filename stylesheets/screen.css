@@ -58,11 +58,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-.icons-sprite, #welcome .logo, #about .experience .row .danat, #about .experience .row .yahoo, #about .experience .row .toadfly, #about .experience .row .fomax {
+/*.icons-sprite, #welcome .logo, #about .experience .row .danat, #about .experience .row .yahoo, #about .experience .row .toadfly, #about .experience .row .fomax {
   background-image: url('../images/icons-sd2ced10e58.png');
   background-repeat: no-repeat;
 }
-
+*/
 /*
 This CSS resource incorporates links to font software which is
 the valuable copyrighted property of Monotype Imaging and/or
@@ -578,22 +578,7 @@ body > section > .holder > .title h2:after {
   padding: 0 0 250px 0;
   min-height: 873px;
 }
-/*#about .bg-image {
-  -moz-transition: all 2s;
-  -o-transition: all 2s;
-  -webkit-transition: all 2s;
-  transition: all 2s;
-  position: absolute;
-  top: 22%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: url(../images/me-about.png) no-repeat right -158px #fcfefe;
-  /*@include filter(blur(5px));
-  &:hover {
-      @include filter(blur(0px));
-  }
-}*/
+
 #about:before {
   -moz-transform: skewY(-3deg);
   -ms-transform: skewY(-3deg);
