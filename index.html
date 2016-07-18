@@ -1,36 +1,446 @@
-<!DOCTYPE>
-<html>
-<head>
-	<title>useDipper Tasks</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-     
-
-	
-	
-	
-</head>
-<body>
-
-<div class="container" >
-
-<h2 style="margin-left:40%;margin-top:10%;width:100%;float:left;"> PROJECTS</h2>
-<h4 style="margin-left:40%;width:100%;float:left;"><a href="Projects/ReactLocator.html">ReactLocator</a></h4>
-<h4 style="margin-left:40%;width:100%;float:left;"><a href="Projects/Dropdown.html">Dropdown</a></h4>
-<h4 style="margin-left:40%;width:100%;float:left;"><a href="Projects/FlickrImage.html">Flickr Image Search</a></h4>
-<h4 style="margin-left:40%;width:100%;float:left;"><a href="Projects/sachinStats/index.html">sachin tendulkar Stats</a></h4>
-
-<div style="width:100%;margin-top:100px;float:left;"> <a href="https://github.com/shrey230195"><img style="width:50px;height:50px;float:left;margin-left:40%;" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"/><h4 style="float:left;"> Shrey Dixit</h4> </a></div>
-
-	
-</div>
- 
-
-<script src="http://code.jquery.com/jquery.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shrey Dixit</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="Shrey dixit,front-end" />
+    <meta name="keywords" content="web design, design, website, development,shipsy, daatos, psd to HTML, front end development, HTML, CSS, web designer, web developer"/>
+    <meta name="Author" content="iamrakesh.com" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="stylesheets/animate.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="stylesheets/jquery.bxslider.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section id="welcome">
+      <!-- Right menu element-->
+      <header class="close">
+        <nav>
+          <div class="relative">
+            <div class="bg"></div>
+            <div class="holder">
+              <a href="#welcome" class="active">Home</a>
+              <a href="#about">About</a>
+              <a href="#works">Projects</a>
+              <!-- <a href="#testimonials">Testimonial</a> -->
+              <a href="#quick-contact">Get In Touch</a>
+          </div>
+        </nav>
+        <div class="nav-bar">
+          <div class="toggle-bar"></div>
+        </div>
+      </header>
+      <div class="welcome">
+        <i class="logo fade-in one"></i>
+        <h1 class="fade-in two">I’m <strong>Shrey</strong></h1>
+        <p class="fade-in three"><strong>Software developer</strong> and <strong>Front End Developer</strong><br>
+        Have a look at what I've done, and if you like them, feel free to <strong>contact me</strong>.<br> Let’s create something <strong>Awesome</strong></p>
+        <a href="#works" class="button fade-in four">Projects</a>
+        <div class="scroll-down clear"><i class="fa fa-angle-double-down animated infinite bounce"></i></div>
+      </div>
+    </section>
     
+    <section id="about">
+      <div class="bg-image"></div>
+      <div class="holder">
+        <div class="title scrollflow -slide-top -opacity"><h2>About</h2></div>
+        <div id="tabs-container">
+          <ul class="tabs-menu title scrollflow -slide-top -opacity">
+            <li class="current"><a href="#bio">Bio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+          </ul>
+          <div class="tab">
+            <aside class="bio tab-content scrollflow -slide-right -opacity" id="bio">
+              <p>Hi, I'm <strong>Shrey Dixit</strong>,a final year <strong>B.tech</strong> student mojoring in <strong>computer science</strong></p>
+              <p>I'm a really enthusiastic person who is always willing to learn new things and expand the horizon of my skill sets.</p>
+              <p>I love to play, be it indoor(chess,cards,pool,table tennis) or outdoor(cricket,swimming,running,football,basketball).I am a music lover and comic reader who also wants to travel the World.</p>
+              <p><strong>Why I love Computer Science and programming</strong></p>
+              <p>Because what computer science provides you,no other branch can.You can impliment all the stuffs you have learned right away.All you need is,a laptop and an internet connection.With programming,you have the power to build something great and you can control things !^_^</p>
+              <div class="links scrollflow">
+                <a href="http://www.iamrakesh.com/resume.pdf" target="_blank" class="button">
+                  <i class="fa fa-download"></i> 
+                  Download CV
+                </a>
+                <a href="mailto:info@iamrakesh.com" class="button">
+                  <i class="fa fa-paper-plane"></i> 
+                  Hire Me
+                </a>
+              </div>
+            </aside>
+            <aside class="skills tab-content"  id="skills">
+              <div class="technical">
+                <h3>Technical</h3>
+                <div class="meter"><span>Python</span><div class="python" data-icon="80%"></div>
+                </div>
+                <div class="meter"><span>Javascript</span><div class="javascript" data-icon="95%"></div></div>
+                <div class="meter"><span>C/C++</span><div class="C" data-icon="90%"></div></div>
+                <div class="meter"><span>Java</span><div class="java" data-icon="60%"></div></div>
+                <div class="meter"><span>php</span><div class="php" data-icon="75%"></div></div>
+                <div class="meter"><span>XHTML / HTML5 / CSS3</span><div class="html" data-icon="100%"></div></div>
+                <div class="meter"><span>jQuery</span><div class="jQuery" data-icon="80%"></div></div>
+                <div class="meter"><span>AngularJs</span><div class="angularJs" data-icon="100%"></div></div>
+                <div class="meter"><span>ReactJs</span><div class="reactJs" data-icon="85%"></div></div>
+                <div class="meter"><span>Gulp/Browserify</span><div class="gulp" data-icon="85%"></div></div>
+                <div class="meter"><span>Node.js</span><div class="node" data-icon="50%"></div></div>
+              </div>
+              <div class="other">
+                <h3>Other</h3>
+                <div class="meter"><span>Cricket</span><div class="cricket" data-icon="100%"></div>
+                </div>
+                <div class="meter"><span>Badminton</span><div class="badminton" data-icon="95%"></div></div>
+                <div class="meter"><span>Swimming</span><div class="swimming" data-icon="90%"></div></div>
+                <div class="meter"><span>Running</span><div class="running" data-icon="98%"></div></div>
+                <div class="meter"><span>Table tennis</span><div class="table-tennis" data-icon="85%"></div></div>
+                <div class="meter"><span>Reading</span><div class="reading" data-icon="80%"></div></div>
+              </div>
+            </aside>
+            <aside class="experience tab-content"  id="experience">
+              <div class="row">
+                <div class="logo danat"></div>
+                <div class="brief">
+                  <span class="company-name">Shipsy.in</span>
+                  <span class="position">Front-End Developer</span>
+                  <span class="duration">Internship ~ march '16 - june '16</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="logo yahoo"></div>
+                <div class="brief">
+                  <span class="company-name">Blaze Infomatiks Pvt Ltd.</span>
+                  <span class="position">Full Stack developer</span>
+                  <span class="duration">Internship ~ june '15 - aug '15</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="logo toadfly"></div>
+                <div class="brief">
+                  <span class="company-name">Faaya.in</span>
+                  <span class="position">front-end maintainer of blogger</span>
+                  <span class="duration">Internship ~ june '15 - july '15</span>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="works">
+      <div class="holder">
+        <div id="to-work"></div>
+        <div class="title scrollflow -slide-top -opacity">
+          <h2>Projects</h2>
+        </div>
+        <!-- <div id="hitfm" class="work_item">
+          <div class="slide_container">
+            <div class="work_description">
+              <h3>Logitic Dashboard-shipsy.in</h3>
+              <p>Front-end developer</p>
+              <div class="close_work"><div></div></div>
+              <div class="prev_work" id="hitfm_prev"><div></div></div>
+              <div class="next_work" id="hitfm_next"><div></div></div>
+            </div>
+            <div class="image_container_M">
+              <img src="images/shipsyDashboard.png" width="725" alt="Dubai's Own Hit96.7FM iOS App - Concept Redesign">
+            </div>
+          </div>
+        </div>
+        <div id="vox" class="work_item">
+          <div class="slide_container">
+            <div class="work_description">
+              <h3>soundNav</h3>
+              <p>Full App</p>
+              <div class="close_work"><div></div></div>
+              <div class="prev_work" id="vox_prev"><div></div></div>
+              <div class="next_work" id="vox_next"><div></div></div>
+            </div>
+            <div class="image_container_M">
+              <img src="images/soundNav.png" width="725" alt="Vox Cinemas iOS App - Concept Redesign">
+            </div>
+          </div>
+        </div>
+        <div id="novo" class="work_item">
+          <div class="slide_container">
+            <div class="work_description">
+              <h3>visualisation of sachin's stats</h3>
+              <p>Front-end,data cleaning,charting</p>
+              <div class="close_work"><div></div></div>
+              <div class="prev_work" id="novo_prev"><div></div></div>
+              <div class="next_work" id="novo_next"><div></div></div>
+            </div>
+            <div class="image_container_M">
+              <img src="images/sachin.png" width="725" alt="Novo Cinemas iOS App - Concept Redesign">
+            </div>
+          </div>
+        </div>
+        <div id="indigo" class="work_item">
+          <div class="slide_container">
+            <div class="work_description">
+              <h3>IndiGo Airline iOS App - Concept Redesign</h3>
+              <p>UI/UX Design</p>
+              <div class="close_work"><div></div></div>
+              <div class="prev_work" id="indigo_prev"><div></div></div>
+              <div class="next_work" id="indigo_next"><div></div></div>
+            </div>
+            <div class="image_container_M">
+              <img src="images/MyPhoto.jpg" width="725" alt="IndiGo Airline iOS App - Concept Redesign">
+            </div>
+          </div>
+        </div>
+        <div id="hangout" class="work_item">
+          <div class="slide_container">
+            <div class="work_description">
+              <h3>Google Hangout Material Redesign Concept</h3>
+              <p>UI/UX Design</p>
+              <div class="close_work"><div></div></div>
+              <div class="prev_work" id="hangout_prev"><div></div></div>
+              <div class="next_work" id="hangout_next"><div></div></div>
+            </div>
+            <div class="image_container_M">
+              <img src="images/MyPhoto.jpg" width="725" alt="Google Hangout Material Redesign Concept">
+            </div>
+          </div>
+        </div>
+        <div id="whatsapp" class="work_item">
+          <div class="slide_container">
+            <div class="work_description">
+              <h3>WhatsApp - Concept Redesign</h3>
+              <p>UI/UX Design</p>
+              <div class="close_work"><div></div></div>
+              <div class="prev_work" id="whatsapp_prev"><div></div></div>
+              <div class="next_work" id="whatsapp_next"><div></div></div>
+            </div>
+            <div class="image_container_M">
+              <img src="images/MyPhoto.jpg" width="725" alt="WhatsApp - Concept Redesign">
+            </div>
+          </div>
+        </div>
+         -->
+        <div class="box scrollflow -slide-top">
+          <a href="https://www.behance.net/gallery/36434077/Hit-967-FM-iOS-App-Redesign-Concept" target="_blank">
+            <img src="images/shipsyDashboard.png">
+            <div class="box-text-inner">
+              <div class="content">
+                <h2>Logistic Dashboard</h2>
+                <p>Front-end Developer</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="box scrollflow -slide-top">
+          <a href="https://www.behance.net/gallery/34736377/Vox-Cinemas-iOS-App-Redesign-Concept" target="_blank">
+            <img src="images/soundNav.png">
+            <div class="box-text-inner">
+              <div class="content">
+                <h2>soundNav</h2>
+                <p>a web based app that let motorly disabled people navigate through web</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="box scrollflow -slide-top">
+          <a href="https://www.behance.net/gallery/34496303/Novo-Cinemas-iOS-App-Redesign-Concept" target="_blank">
+            <img src="images/sachin.png">
+            <div class="box-text-inner">
+              <div class="content">
+                <h2>Sachin's Stats</h2>
+                <p>A visualisation of Sachin Tendulkar's batting and bowling stats</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="box work_1 scrollflow -slide-top">
+          <a href="Projects/ReactLocator.html" target="_blank">
+            <img src="images/useDipper.png">
+            <div class="box-text-inner">
+              <div class="content">
+                <h2>UseDipper</h2>
+                <p>a simple React app which stores person's data and address to shows a path from home to office</p>
+                </div>
+            </div>
+          </a>
+        </div>
+        <div class="box scrollflow -slide-top">
+          <a href="Projects/Dropdown.html" target="_blank">
+            <img src="images/reactDrop.png">
+            <div class="box-text-inner">
+              <div class="content"><h2>Dyanamic Dropdown</h2><p>dyanamic dropdown using ReactJs</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="box scrollflow -slide-top">
+          <a href="https://github.com/shrey230195/Recomendation-System" target="_blank">
+            <img src="images/recommendation.png">
+            <div class="box-text-inner">
+              <div class="content"><h2>Movie Recommendation Engine</h2><p>A python powered recommendation system which uses collaborative filtering</p>
+              </div>
+            </div>
+          </a>
+        </div>
 
-</body>
-</html>
+      </div>
+    </section>
+                                        <!-- <section id="testimonials">
+                                          <div class="holder">
+                                            <div class="title scrollflow -slide-top -opacity"><h2>Testimonials</h2></div>
+                                            <div class="testimonial scrollflow -slide-top -opacity">
+                                              <ul class="bxslider">
+                                                <li>
+                                                  <div>
+                                                    <p class="quote">""
+                                                    </p>
+                                                    <div class="client-info"></div>
+                                                  </div>
+                                                </li>
+                                                <li>
+                                                  <div>
+                                                    <p class="quote">
+                                                    </p>
+                                                    <div class="client-info"></div>
+                                                  </div>
+                                                </li>
+                                                <li>
+                                                  <div>
+                                                    <p class="quote">
+                                                    </p>
+                                                    <div class="client-info"></div>
+                                                  </div>
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                        </section> -->
+                                        
+    <section id="quick-contact">
+      <div class="holder">
+        <h2 class="-slide-top -opacity">Want to work with me?</h2>
+        <div class="contact-info">
+          <div class="mail"><a href="mailto:shreydixit93@gmail.com" title="shreydixit93@gmail.com"><i class="fa fa-envelope"></i> shreydixit93@gmail.com</a></div>
+          <div class="tel"><i class="fa fa-mobile"></i> +91 9958483101</div>
+        </div>
+        <div class="social">                                    
+          <a href="https://github.com/shrey230195" target="_blank"><i class="fa fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/shreydixit" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/shrey95" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://plus.google.com/113650594408661427188/posts" target="_blank"><i class="fa fa-google-plus"></i></a>
+        </div>
+        <a href="mailto:shreydixit93@gmail.com" title="shreydixit93@gmail.com" class="button">Get in touch</a>
+        <div class="copy">&copy;shrey dixit
+          <script language="JavaScript" type="text/javascript">
+              now = new Date
+              theYear=now.getYear()
+              if (theYear < 1900)
+              theYear=theYear+1900
+              document.write(theYear)
+          </script>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="javascripts/html5shiv-printshiv.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.js"></script>
+    <script type="text/javascript" src="javascripts/main.js"></script>
+    <script src="javascripts/jquery.scrollflow.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.easing.1.3.js"></script>
+                                        
+    <script src="javascripts/jquery.bxslider.min.js"></script>
+                                        
+    <script>
+      $(document).ready(function(){
+        $('.bxslider').bxSlider({
+          adaptiveHeight: true,
+          auto: true,
+          mode: 'fade'
+        });
+      });
+    </script>
+    <script type="text/javascript">
+       $(function() {                       
+       $(".nav-bar").click(function() {  
+       $("header").toggleClass("close");     
+       });
+       });
+    </script>
+    <script type="text/javascript">
+       $(document).ready(function() {
+         $(".tabs-menu a").click(function(event) {
+           event.preventDefault();
+           $(this).parent().addClass("current");
+           $(this).parent().siblings().removeClass("current");
+           var tab = $(this).attr("href");
+           $(".tab-content").not(tab).css("display", "none");
+           $(tab).fadeIn(1200);
+         });
+       });
+    </script>
+    <script type="text/javascript">
+        $(function() {
+          $('nav a').bind('click',function(event){
+            var $anchor = $(this);
+            $('a').each(function () {
+              $(this).removeClass('active');
+            })
+            $(this).addClass('active');
+            $('html, body').stop().animate({
+              scrollTop: $($anchor.attr('href')).offset().top-80
+            }, 1500,'easeInOutExpo');
+                                              
+            event.preventDefault();
+          });
+          $('.welcome a').bind('click',function(event){
+            var $anchor = $(this);
+            $('a').each(function () {
+              $(this).removeClass('active');
+            })
+            $(this).addClass('active');
+            $('html, body').stop().animate({
+              scrollTop: $($anchor.attr('href')).offset().top
+            }, 1500,'easeInOutExpo');
+                                            
+            event.preventDefault();
+          });
+        });
+        $(document).ready(function () {
+          $(document).on("scroll", onScroll);
+          $('a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+            $(document).off("scroll");
+                                            
+            $('a').each(function () {
+              $(this).removeClass('active');
+            })
+            $(this).addClass('active');
+                                            
+            var target = this.hash,
+            menu = target;
+            $target = $(target);
+                                          
+          });
+        });
+        function onScroll(event){
+          var scrollPos = $(document).scrollTop();
+          $('nav a').each(function () {
+            var currLink = $(this);
+            var refElement = $(currLink.attr("href"));
+            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+              $('nav a').removeClass("active");
+              currLink.addClass("active");
+            }
+            else{
+              currLink.removeClass("active");
+            }
+          });
+        }
+    </script>
+
+ 
+  </body>
+</html>                                     
+
+
+
+
+                                    
