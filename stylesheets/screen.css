@@ -1408,7 +1408,11 @@ body > section > .holder > .title h2:after {
   font-size: 22px;
 }
 
-@media screen and (max-width: 1024px) {
+/*@media screen and (max-width: 1024px) {
+  #welcome {
+    background-position: center top;
+    background-size: 130% 120%;
+  }
   #welcome .welcome {
     height: 580px;
   }
@@ -1416,7 +1420,7 @@ body > section > .holder > .title h2:after {
   #about .bg-image {
     background-position: -260% -158px;
   }
-}
+}*/
 @media screen and (max-width: 780px) {
   body > section > .holder > .title h2 {
     font-size: 35px;
