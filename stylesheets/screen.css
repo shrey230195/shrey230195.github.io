@@ -702,6 +702,10 @@ body > section > .holder > .title h2:after {
   display: none;
 }
 #about #bio {
+  /*display: block;*/
+  width: 90%;
+}
+#about #experience{
   display: block;
   width: 90%;
 }
@@ -769,25 +773,28 @@ body > section > .holder > .title h2:after {
 #about .skills .meter + .meter {
   margin: 22px 0 0 0;
 }
-#about .skills .meter .Python {
+#about .skills .meter .python {
   width: 80%;
 }
-#about .skills .meter .Javascript {
+#about .skills .meter .javascript {
   width: 95%;
 }
 #about .skills .meter .C {
   width: 90%;
 }
-#about .skills .meter .Java {
+#about .skills .meter .java {
   width: 60%;
 }
 #about .skills .meter .jQuery {
   width: 80%;
 }
-#about .skills .meter .AngularJs {
+#about .skills .meter .php{
+  width: 75%;
+}
+#about .skills .meter .angularJs {
   width: 100%;
 }
-#about .skills .meter .ReactJs {
+#about .skills .meter .reactJs {
   width: 85%;
 }
 #about .skills .meter .html {
@@ -858,6 +865,11 @@ body > section > .holder > .title h2:after {
 #about .experience .row .brief .position {
   font-style: italic;
   font-size: 16px;
+  padding: 10px 0 0 0;
+}
+#about .experience .row .brief .about {
+  font-style: italic;
+  font-size: 15px;
   padding: 10px 0 0 0;
 }
 #about .experience .row .brief .duration {
