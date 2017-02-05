@@ -1429,7 +1429,7 @@ body > section > .holder > .title h2:after {
 
   #welcome {
     background-position: center top;
-    background-size: 130%;
+    background-size: 130% 120%;
   }
   #welcome .close {
     margin-top: -298px;
